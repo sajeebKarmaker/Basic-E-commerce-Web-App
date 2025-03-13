@@ -1,2 +1,35 @@
-
-
+.google-design {
+    background-color: #f8f9fa; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .apple-design {
+    background-color: #b1b1b1;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #37474F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .apple-design button {
+    background-color: #00796B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apple-design button:hover {
+    background-color: #004D40;
+  }

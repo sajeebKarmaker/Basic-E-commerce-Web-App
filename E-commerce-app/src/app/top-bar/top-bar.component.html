@@ -1,8 +1,11 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
-
+<div class="top-bar">
+  <h1 *ngIf="store === 'google'">Welcome to the Google Store</h1>
+  <h1 *ngIf="store === 'apple'">Welcome to the Apple Store</h1>
+  <h1 *ngIf="!store">Welcome to Our Store</h1>
+</div>
 <a routerLink="/cart" class="button fancy-button">
   <em class="material-icons">shopping_cart</em>Checkout
 </a>
+
+
 

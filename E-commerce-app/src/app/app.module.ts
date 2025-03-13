@@ -10,13 +10,15 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CartComponent } from './cart/cart.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: HomeComponentComponent}, //Base component
+      { path: 'products/:store', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent }
     ])
@@ -29,6 +31,7 @@ import { CartComponent } from './cart/cart.component';
     ProductDetailsComponent,
     ShippingComponent,
     CartComponent,
+    HomeComponentComponent,
   ],
   bootstrap: [
     AppComponent
